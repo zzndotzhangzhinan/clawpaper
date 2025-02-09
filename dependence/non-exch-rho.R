@@ -68,7 +68,7 @@ for (k in 1:length(rvec) ){
     #x[1:m/2] = (1-theta[1:m/2])*rnorm(m/2,f0[1],f0[2]) + theta[1:m/2]*rnorm(m/2,mu,1)
     #x[(1+m/2):m] = (1-theta[(1+m/2):m])*rnorm(m/2,f0[1],f0[2]) +
     #  theta[(1+m/2):m]*rnorm(m/2,0.8*mu,1.5)
-    y = (ts-noi)/sqrt(1.01)
+    y = (ts+rnorm(m,0,0.1))/sqrt(1.01)
     
     #new mwthod
     pwscore = cor_1D.func(x, y, tau=0.5, h)
@@ -224,7 +224,7 @@ for (k in 1:length(rvec) ){
     x[(1+m/2):m] = (1-theta[(1+m/2):m])*(ts[(1+m/2):m]+noi[(1+m/2):m])/sqrt(1.01) +
       theta[(1+m/2):m]*rnorm(m/2,3.6,1.5)
     
-    y = (ts-noi)/sqrt(1.01)
+    y = (ts+rnorm(m,0,0.1))/sqrt(1.01)
     
     #new mwthod
     pwscore = cor_1D.func(x, y, tau=0.5, h)
@@ -381,7 +381,7 @@ for (k in 1:length(rvec) ){
     #x[1:m/2] = (1-theta[1:m/2])*rnorm(m/2,f0[1],f0[2]) + theta[1:m/2]*rnorm(m/2,mu,1)
     #x[(1+m/2):m] = (1-theta[(1+m/2):m])*rnorm(m/2,f0[1],f0[2]) +
     #  theta[(1+m/2):m]*rnorm(m/2,0.8*mu,1.5)
-    y = (ts-noi)/sqrt(1.01)
+    y = (ts+rnorm(m,0,0.1))/sqrt(1.01)
 
     
     #new mwthod
