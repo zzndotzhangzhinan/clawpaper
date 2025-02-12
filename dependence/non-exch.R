@@ -302,7 +302,7 @@ colnames(ex1.2tdp) = c("pi","METHOD","value")
 ## ------------------------------------------------------------------------------------------
 line1.2fdr = ggplot(ex1.2fdr)+aes(x=pi, y=value, group=METHOD, color=METHOD, shape=METHOD)+
   geom_point(size=3)+
-  geom_line(size=0.7)+ylab("FDR")+
+  geom_line(size=0.7)+ylab("FDR")+ylim(0, 0.1)+
   geom_hline(aes(yintercept=al),size=1)+
   theme_bw()
 
