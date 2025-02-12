@@ -152,7 +152,7 @@ colnames(ex1.1tdp) = c("rho","METHOD","value")
 ## ------------------------------------------------------------------------------------------
 line1.1fdr = ggplot(ex1.1fdr)+aes(x=rho, y=value, group=METHOD, color=METHOD, shape=METHOD)+
   geom_point(size=3)+
-  geom_line(size=0.7)+ylab("FDR")+
+  geom_line(size=0.7)+ylab("FDR")+ylim(0, 0.1)+
   geom_hline(aes(yintercept=al),size=1)+
   theme_bw()
 
@@ -307,7 +307,7 @@ colnames(ex1.2tdp) = c("rho","METHOD","value")
 ## ------------------------------------------------------------------------------------------
 line1.2fdr = ggplot(ex1.2fdr)+aes(x=rho, y=value, group=METHOD, color=METHOD, shape=METHOD)+
   geom_point(size=3)+
-  geom_line(size=0.7)+ylab("FDR")+
+  geom_line(size=0.7)+ylab("FDR")+ylim(0, 0.1)+
   geom_hline(aes(yintercept=al),size=1)+
   theme_bw()
 
@@ -464,7 +464,7 @@ colnames(ex1.3tdp) = c("rho","METHOD","value")
 
 ## ------------------------------------------------------------------------------------------
 line1.3fdr = ggplot(ex1.3fdr)+aes(x=rho, y=value, group=METHOD, color=METHOD, shape=METHOD)+
-  geom_point(size=3)+geom_line(size=0.7)+
+  geom_point(size=3)+geom_line(size=0.7)+ylim(0, 0.1)+
   geom_hline(aes(yintercept=al),size=1)+
   theme_bw()
 
