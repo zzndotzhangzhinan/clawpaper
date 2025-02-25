@@ -1,1 +1,1 @@
-This fold contains codes for Figure 6 in the Supplement.
+This fold contains codes for Figure D.3 in the Supplement.
